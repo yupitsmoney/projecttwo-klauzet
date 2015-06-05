@@ -1,17 +1,16 @@
 Rails.application.routes.draw do
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
 
-  # we'll set the root route to users index
+  # You can have the root of your site routed with "root"
+  # root 'welcome#index'
   root 'users#index', as: :users
 
-  # route to return our sign up form
   get 'users/new' => 'users#new', as: :new_user
 
-  #a route to post our user from to
   post '/' => 'users#create'
 
-  #...above routes ommitted
-
-  #to display the form
+    #to display the form
   get 'sessions/new' => 'sessions#new', as: :new_session
 
 
@@ -20,15 +19,6 @@ Rails.application.routes.draw do
 
   #destroy the session and log a user out
   get 'sessions/destroy' => 'sessions#destroy', as: :destroy_session 
-
-  get 'targets/' => 'targets#index', as: :targets
-
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
