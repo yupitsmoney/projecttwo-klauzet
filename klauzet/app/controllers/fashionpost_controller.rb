@@ -1,0 +1,2 @@
+class FashionpostController < ApplicationController
+end

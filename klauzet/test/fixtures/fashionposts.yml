@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: MyString
+  hat_url: MyString
+  shirt_url: MyString
+  jacket_url: MyString
+  pants_url: MyString
+  shoes_url: MyString
+
+two:
+  day: MyString
+  hat_url: MyString
+  shirt_url: MyString
+  jacket_url: MyString
+  pants_url: MyString
+  shoes_url: MyString
